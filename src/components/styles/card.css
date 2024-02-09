@@ -1,0 +1,58 @@
+.containerCard{
+    background-color: #fff;
+    width: 150px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    backdrop-filter:brightness(10%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.containerCard img{
+    width: 120px;
+    z-index: -1;
+}
+.filterCard{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    transition: opacity .4s;
+    transform: translateY(0px);
+}
+.containerCard:hover .filterCard{
+    opacity: 0;
+}
+.cardTitle{
+    position: absolute;
+    top: 0;
+    right: 24%;
+    bottom: 0;
+    display: block;
+    z-index: 100;
+    color: #000;
+    transform: translateY(-40px);
+    transition: all 0.4s ease-in-out;
+}
+.containerCard:hover h3{
+    transform: translateY(0px);
+}
+.btnCard{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f9f45a;
+    color: #000;
+    transform: translateY(60px);
+    transition: all 0.4s ease-in-out;
+    cursor:pointer;
+}
+.containerCard:hover .btnCard{
+    transform: translateY(0px);
+}

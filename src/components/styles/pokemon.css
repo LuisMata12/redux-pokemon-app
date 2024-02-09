@@ -1,0 +1,7 @@
+.title_app{
+    color: #ecedef;
+    text-align: center;
+    border-bottom: solid 1px #ecedef;
+    padding-bottom: 20px;
+    z-index: 1;
+}
